@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./create_account.css" />
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h3>Create Account</h3>
+            <p>By creating an account, you agree to Kohl's <u>Security & Privacy Policy</u> and <u>Legal Notices</u>.</p>
+        </div>
+        <form id="form">
+            <div id="first_last_name">
+                <div class="info" name="firstName">
+                    <h4>First Name</h4>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="info" name="lastName">
+                    <h4>Last Name</h4>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+            </div>
+            <div id="email_password">
+                <div class="info" name="firstName">
+                    <h4>Email Address</h4>
+                    <input type="email" placeholder="name@mail.com" id="email">
+                </div>
+                <div class="info" name="lastName">
+                    <h4>Password</h4> </h4>
+                    <input type="password" placeholder="Should not be same as email or login" id="password">
+                </div>
+            </div>
+            <div id="checkbox">
+                <div class="check">
+                    <input type="checkbox"/>
+                    <p>Keep me signed in</p>
+                </div>
+                <div>Check this box to stay signed in on this device. Recommended for devices that only you use.</div>
+            </div>
+            <div class="line"></div>
+            <div id="rewards">
+                <img src="https://www.kohls.com/account/media/42.0.0-684/images/loyaltyV2/kohls-rewards-horizontal.png" alt="rewards">
+                <div class="tooltip">?
+                    <span class="tooltiptext">Earn more Kohl's Cash®. Every purchase. No matter how big or small.</span>
+                </div>
+            </div>
+            <div id="reward_enrollment">
+                <div class="radioButtons">
+                    <input type="radio" class="inStore" name="rewards" value="inStore"
+                            checked>
+                    <label for="inStore">I signed up In store</label>
+                </div>
+                <div class="radioButtons">
+                    <input type="radio" class="inStore" name="rewards" value="inStore"
+                            checked>
+                    <label for="inStore">Enroll Today!</label>
+                </div>
+                <div class="radioButtons">
+                    <input type="radio" class="inStore" name="rewards" value="inStore"
+                            checked>
+                    <label for="inStore">No Thanks.</label>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div id="subscribe">
+                <div class="check">
+                    <input type="checkbox"/>
+                </div>
+                <p><b>Yes, sign me up!</b> I'd like to receive Kohl's e-mail offers, updates on sales and events and more! US Residents Only. Get 15% off your next purchase. Terms apply; see <b><u>details.</u> <u>Privacy Policy.</u></b></p>
+                <div class="tooltip">?
+                    <span class="tooltiptext">Earn more Kohl's Cash®. Every purchase. No matter how big or small.</span>
+                </div>
+            </div>
+            <div id="submitForm">
+                <input type="submit" id="submit" value="CREATE ACCOUNT">
+                <a href="">CANCEL</a>
+                <!-- Add Login page in the "CANCEL" anchor tag-->
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./create_account.js"></script>
+</html>
