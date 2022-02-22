@@ -13,7 +13,7 @@ document.querySelector("#form").addEventListener("submit",data)
          
         for(var i=0;i<sign.length;i++)
         {
-            if(sign[i].email==Email&&sign[i].password==Pass)
+            if(sign[i].email==Email&&sign[i].pass==Pass)
             {
                 windows.alert("Succesful");
             }
