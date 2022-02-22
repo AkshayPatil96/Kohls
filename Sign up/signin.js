@@ -3,8 +3,8 @@ document.querySelector("#form").addEventListener("submit",data)
 
     function data()
     {
-        var email=document.querySelector("#email").value
-        var pass=document.querySelector("#pass").value
+        var email=document.querySelector("#email").value;
+        var pass=document.querySelector("#pass").value;
 
         var database={
             Email:email,
