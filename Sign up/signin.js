@@ -1,4 +1,4 @@
-  
+  var sign=JSON.parse(localStroge.getItem("signupData"));
 document.querySelector("#form").addEventListener("submit",data)
 
     function data()
@@ -11,9 +11,9 @@ document.querySelector("#form").addEventListener("submit",data)
             Pass:pass,
         };
          
-        for(var i=0;i<arr.length;i++)
+        for(var i=0;i<sign.length;i++)
         {
-            if(arr[i].email==Email&&arr[i].passward==Pass)
+            if(sign[i].email==Email&&sign[i].password==Pass)
             {
                 windows.alert("Succesful");
             }
