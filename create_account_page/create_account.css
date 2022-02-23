@@ -25,7 +25,15 @@ h4{
     font-weight: 600;
     margin: 0;
 }
-input:not(input[type=checkbox]):not(input[type=radio]){
+/* input:not(input[type=checkbox]):not(input[type=radio]){
+    height: 35px;
+    border: 1px solid #DCDDDC;
+    margin-top: 10px;
+    width: 97.5%;
+    font-size: 14px;
+    padding: 1px 1px 1px 5px;
+} */
+#firstName,#lastName,#email,#password{
     height: 35px;
     border: 1px solid #DCDDDC;
     margin-top: 10px;
@@ -33,12 +41,20 @@ input:not(input[type=checkbox]):not(input[type=radio]){
     font-size: 14px;
     padding: 1px 1px 1px 5px;
 }
-input:focus:not(input[type=radio]):not(input[type=checkbox]){
+/* input:focus:not(input[type=radio]):not(input[type=checkbox]){
+    box-shadow: rgba(0, 59, 148, 0.35) 0px 5px 15px;
+    outline: none;
+    border-color: rgb(189, 206, 255);
+} */
+#firstName:focus,#lastName:focus,#email:focus,#password:focus{
     box-shadow: rgba(0, 59, 148, 0.35) 0px 5px 15px;
     outline: none;
     border-color: rgb(189, 206, 255);
 }
-input:focus::placeholder{
+/* input:focus::placeholder{
+    color: transparent;
+} */
+#email:focus::placeholder,#password:focus::placeholder{
     color: transparent;
 }
 .info{
