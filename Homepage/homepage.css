@@ -4,15 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-/* 1st */
-
-#header {
-  text-align: center;
-  font-size: 14px;
-  padding: 0.5%;
-  background-color: #eeeeee;
-}
-
 /* 3nd */
 
 #subhead {
@@ -20,6 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+  /* catogery dropdown */
 
 #subhead > div > ul {
   list-style: none;
@@ -304,3 +297,5 @@ img {
   font-weight: bold;
   font-size: 20px;
 }
+
+
