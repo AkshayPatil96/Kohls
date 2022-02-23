@@ -22,5 +22,4 @@ document.querySelector("#form").addEventListener("submit",data)
                windows.alert("Wrong Email or Pass");
             }
         }
-        
     }

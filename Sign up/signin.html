@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="/Sign up/sigin.css">
     <script
     src="https://kit.fontawesome.com/9d6433328b.js"
     crossorigin="anonymous"
   ></script>
-
-    
+  <link rel="stylesheet" href="/Homepage/navbar.css">
+    <title>Document</title>    
 </head>
 <body>
     <div id="header">
@@ -55,7 +54,7 @@
                           <ul>
                     <li class="sign">
                         <div>
-                        <a class="a1" href="/Sign up/signup.html">Sign In</a>
+                        <a class="a1" href="/Sign up/signin.html">Sign In</a>
                       </div>
                       <div>
                         <a
@@ -105,7 +104,7 @@
       </nav>
 <div id="container">
     <div id="child">
-        <h1>Signup</h1>
+        <h1>Sign-In</h1>
         <h4>Sign in to your Kohls.com account to shop,
             check out or track your order.<h4>
       <form id="form">
@@ -113,31 +112,28 @@
           <input type="email" id="email"/>
           <h3>Password</h3>
           <input type="number" id="pass">
-          <input type="submit" id="submit">
+          <a href="/Homepage/index.html"><input type="submit" id="submit"></a>
         </form>
     </div>
+    <div class="v_line"></div>
     <div id="child2">
         <h1>Create Account</h1>
         <h4>With a Kohls.com account, enjoy exclusive,
             benefits that make shopping faster and easier!</h4>
-            <div id="facility">
-                <div> <img src="https://www.flaticon.com/free-icons/shopping-cart" alt="Checkout"></div>
-                <div><h2>Enjoy Express Checkout</h2> </div>
+            <div class="facility">
+                <div><h2><i class="fa-solid fa-cart-flatbed lg"></i>Enjoy Express Checkout</h2> </div>
 
             </div>
-            <div id="facility">
-                <div><img src="https://www.flaticon.com/free-icons/reward" alt="Rewards"></div>
-                <div><h2>See your Kohl's Rewards</h2></div>
+            <div class="facility">
+                <div><h2><i class="fa-solid fa-wallet lg"></i>See your Kohl's Rewards</h2></div>
             </div>
-            <div id="facility">
-                <div><img src="https://www.flaticon.com/free-icons/money" alt="cash"></div>
-                <div><h2>Print Kohl's Cash</h2></div>
+            <div class="facility">
+                <div><h2><i class="fa-solid fa-credit-card lg"></i>Print Kohl's Cash</h2></div>
             </div>
-            <div id="facility">
-                <div><img src="phtos/Track.png" alt=""></div>
-                <div><h2>Track orders easily</h2></div>
+            <div class="facility">
+                <div><h2><i class="fa-solid fa-truck lg"></i>Track orders easily</h2></div>
             </div>
-            <button onClick="Create_Account">CREATE ACCOUNT</button>
+            <a class="create" href="/create_account_page/create_account.html"><button>CREATE ACCOUNT</button></a>
     </div>
 </div>
 </body>
