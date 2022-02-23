@@ -1,11 +1,12 @@
-* {
-    color: #555;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
 
 /* 20% off banner css */
 
 #offer {
-  /* background-color: aqua; */
   padding: 1%;
 }
 
@@ -15,16 +16,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /* border: 1px solid green; */
   background-color: rgba(255, 255, 255, 0.37);
-  border: 8px solid #e51549;
+  border: 20px solid #e51549;
 }
 
 #extra {
   text-align: right;
   margin-right: 1%;
-  /* margin-top: -50px; */
-  /* border: 1px solid red; */
 }
 
 h5 {
@@ -32,18 +30,13 @@ h5 {
 }
 
 #off {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   margin-right: 1%;
   align-items: center;
-  /* position: relative; */
-  /* height: 10px; */
 }
 
 .t20 {
-  /* border: 1px solid black; */
-  /* position: relative; */
   font-weight: bolder;
   font-size: 100px;
   margin-top: auto;
@@ -52,22 +45,18 @@ h5 {
 }
 
 .per {
-  /* border: 1px solid red; */
-  /* margin-top: px; */
   font-weight: 800;
   font-size: 35px;
   text-align: center;
 }
 
 .peroff {
-  /* border: 1px solid red; */
   margin-top: -40px;
   font-size: 35px;
   text-align: center;
 }
 
 #offer {
-  /* border: 1px solid rebeccapurple; */
   margin-top: 1%;
 }
 
@@ -84,11 +73,8 @@ h5 {
 #procode > div > p {
   margin: auto;
   font-weight: 500;
-  /* margin-top: -5%; */
 }
 #procode > div > p:nth-child(2) {
-  /* margin: auto; */
-  /* margin-top: -5%; */
   font-weight: bold;
 }
 
@@ -101,148 +87,204 @@ h5 {
   grid-template-columns: 20% 80%;
 }
 
-/* Sticky filter */
+#free_ship {
+  background-color: black;
+  color: white;
+  /* border: 1px solid red; */
+  /* height: 50px; */
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
 
-.filter ul {
-  border: 1px solid;
+#free_ship > div {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+/* Sticky filter css */
+
+.filter {
+  margin-top: -7%;
+}
+
+.filter > ul {
+  border: 1px solid #6e7174a1;
   background-color: #fff;
-  border-top: 1px solid #6e7174a1;
-  border-bottom: 1px solid #6e7174a1;
+  /* border:1px solid red; */
   font-family: Helvetica;
   position: sticky;
   top: 75px;
-  /* z-index: 100; */
 }
 
-.filter ul {
-    border: 1px solid red;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.filter > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* height: 500px; */
+  /* overflow: scroll; */
 }
 
-.filter ul li {
-    border-bottom: 1px solid green;
-    margin: 10px;
-    margin-left: -15%;
-    display: flex;
-    padding: 8px;
-    justify-content: space-between;
+.filter > ul > li {
+  border-bottom: 1px solid rgb(189, 182, 182);
+  margin: 10px;
+  margin-left: -15%;
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  cursor: pointer;
+}
 
+.d_down > ul {
+  position: relative;
+  top: 0px;
+  left: -70px;
+  width: 100%;
+}
+
+.d_down > ul > li {
+  border-bottom: 1px solid rgb(185, 174, 174);
+  width: 100%;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.d_down > ul > li .tic {
+  border: 1px solid red;
+  margin-right: 4%;
+  height: 15px;
+  width: 15px;
 }
 
 /* category Mens css */
-
-.main_body .category_mens {
-  border: 1px solid red;
-  height: 200px;
+.category_mens {
+  /* border: 1px solid red; */
+  /* height: 200px; */
   display: flex;
   gap: 5px;
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin: 1%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 4%;
 }
 
-.sub_cate {
-    /* margin: 5px; */
-    border: 1px solid;
-    width: 15%;
+.category_mens div {
+  /* border: 1px solid; */
+  width: 15%;
+  height: 200px;
+  margin-bottom: 2%;
+  cursor: pointer;
 }
 
-.sub_cate img {
-    border: 1px solid teal;
-    width: 100%;
-    height: 80%;
+.category_mens div img {
+  /* border: 1px solid teal; */
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
 }
 
-.sub_cate p {
-    text-align: center;
-    margin-top: 5%;
+.category_mens div p {
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 hr {
-    /* border: 1px solid; */
-    margin: -2% 1% 2% 1%;
-    color: #555;
+  margin: -4% 1% auto 1%;
+  color: #555;
 }
 
-.sort{
-    margin: -2% 1% 2% 1%;
-    margin-top: -2%;
-    /* border: 1px solid; */
-    padding: 2%;
+/* Srting data css */
+
+.sort {
+  margin: -2% 1% 2% 1%;
+  margin-top: -2%;
+  padding: 2%;
 }
 
 .sort h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .sort p {
-    font-weight: bold;
-    font-size: 15;
+  font-weight: bold;
+  font-size: 15;
 }
 
 .sort p select {
-    /* border: 1px solid red; */
-    border-radius: 5px;
-    width: 20%;
-    padding: 1%;
-    margin-left: 0.5%;
+  border-radius: 5px;
+  width: 20%;
+  padding: 1%;
+  margin-left: 0.5%;
 }
 
-.sort p select option {
-    border: 1px solid green;
-    margin: 1%;
-    padding: 1%;
-}
-
-/* items css */
+/* mens data css */
 
 .main_body .items {
-  border: 1px solid green;
-  /* height: 500px; */
-  margin: 1%;
+  border-left: 1px solid rgb(180, 176, 176);
+  border-top: 1px solid rgb(180, 176, 176);
+  /* margin: 1%; */
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 8%;
-  /* margin: auto; */
   align-items: center;
   padding: 3%;
 }
 
 .main_body .items .itm {
-    border: 1px solid red;
-    width: 25%;
-    height: 500px;
-    margin-top: 2%;
+  width: 25%;
+  height: 450px;
+  margin-top: 2%;
 }
 
 .main_body .items .itm img {
-    border: 1px solid;
-    width: 100%;
-    height: 350px;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
 }
 
-.main_body .items .itm .o_p{
-    text-align: center;
-    color: black;
-    font-size: 25px;
-    margin: 2%;
+.main_body .items .itm .o_p {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  margin: 2%;
 }
 
 .main_body .items .itm .r_p {
-    text-align: center;
-    margin: -2%;
-    font-size: 15px;
+  text-align: center;
+  margin: -2%;
+  font-size: 15px;
+  text-decoration: line-through;
 }
 
 .main_body .items .itm .name {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 5%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5%;
+  height: 60px;
+  overflow: hidden;
+}
+
+.main_body .items .itm .name:hover {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5%;
+  border: 1px solid #b7b9bb81;
+  height: auto;
+  position: relative;
+  background-color: rgba(228, 222, 222, 0.315);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

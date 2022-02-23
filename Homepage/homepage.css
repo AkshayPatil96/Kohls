@@ -280,12 +280,6 @@ img {
   border: none;
 }
 
-.sec_img:hover {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
 .sec2a {
   /* border: 1px solid red; */
   cursor: pointer;
@@ -296,6 +290,11 @@ img {
   margin-top: auto;
   font-weight: bold;
   font-size: 20px;
+  color: black;
+}
+
+.sec2a > a {
+  text-decoration: none;
 }
 
 
