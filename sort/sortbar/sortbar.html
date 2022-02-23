@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sortbar.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sort">
+            <select name="Price" id="sprice" onchange="sprice()">
+                <option value="">Price</option>
+               <option value="h2l">High To Low</option>
+               <option value="l2h">Low to High</option>
+            </select>
+        </div> 
+        <div id="sort">
+            <select name="Size" id="ssize">
+                <option value="">Size</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+        <div id="sort">
+            <select name="Brand" id="sbrand" onchange="sbrand()">
+                <option value="">Brand</option>
+                <option value="a">Adidas</option>
+                <option value="n">Nike</option>
+                <option value="c">Calvin</option>
+                <option value="z">Zara</option>
+            </select>
+        </div>
+    <div id="sort">
+        <select name="Fit" id="sfit">
+            <option value="">Fitting</option>
+            <option value="">Classic</option>
+            <option value="">Slim</option>
+            <option value="">Modern</option>
+            <option value="">Regular</option>
+        </select>
+    </div>
+    <div id="sort">
+        <select name="color" id="scolor">
+            <option value="">color</option>
+            <option value="">White</option>
+            <option value="">Red</option>
+            <option value="">Green</option>
+            <option value="">Blue</option>
+        </select>
+    </div>
+    <div id="sort">
+        <select name="Rating" id="srating" onchange="srating()" >
+            <option value="">Rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <div id="sort">
+        <select name="Material" id="smaterial">
+            <option value="">Material</option>
+        <option value="">Cotton</option>
+        <option value="">Denim</option>
+        <option value="">Flannel</option>
+        <option value="">Fleece</option>
+    </select>
+    </div>
+    <div id="sort">
+       <select name="AgeRange" id="srange">
+           <option value="">Age Range</option>
+           <option value="">Adult</option>
+           <option value="">Teen</option>
+           
+       </select>
+    </div>
+    <div id="sort">
+        <select name="" id="sgender" onchange="sgender()">
+            <option value="">Gender</option>
+            <option value="">Men</option>
+            <option value="">Women</option>
+        </select>
+
+    </div>
+    <div id="sort">
+        <select name="" id="sdepartment">
+            <option value="">Depertment</option>
+            <option value="">Accesories</option>
+            <option value="">Clothing</option>
+            <option value="">Shoes</option>
+        </select>
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#container
+{
+    height:100%;
+    width:20%;
+    /* border:2px solid red; */
+    justify-content: center;
+    text-align: center;
+    margin-top:5%;
+    overflow-y:scroll;
+   
+    
+}
+#sort
+{
+    margin-top:12%;
+}
+#sort>select
+{
+    width:100%;
+   
+    font-size: large;
+    font-weight:bold;
+    
+    
+}
