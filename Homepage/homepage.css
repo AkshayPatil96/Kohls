@@ -9,15 +9,84 @@ body {
 #header {
   text-align: center;
   font-size: 14px;
-  background-color: rgb(182, 185, 187);
+  padding: 0.5%;
+  background-color: #eeeeee;
 }
-
 
 /* 3nd */
 
 #subhead {
-  border-bottom: 1px solid #6e7174a1;
-  height: 40px;
+  border-bottom: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subhead > div > ul {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: auto;
+  /* position: relative; */
+}
+
+#subhead div ul li {
+  margin: 5px;
+  margin-left: -5%;
+  padding: 5px;
+}
+
+#subhead div ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  padding: 15px;
+}
+
+#subhead div ul li a i {
+  margin-right: 5px;
+}
+
+#subhead .menu2 {
+  /* border: 1px solid red; */
+  margin-right: -3%;
+}
+
+#subhead .menu2 ul li a {
+  /* border: 1px solid red; */
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#subhead .menu2 ul li a i {
+  margin-right: 5px;
+}
+
+.sub_menu1 {
+  border: 1px solid rgb(165, 162, 162);
+  position: absolute;
+  /* overflow: hidden; */
+  background-color: white;
+  margin-top: 0.75%;
+}
+
+
+.sub_menu1 ul {
+  list-style: none;
+  margin-left: -17%;
+}
+
+.sub_menu1 ul li {
+  /* border: 1px solid red; */
+  width: 100%;
+  cursor: pointer;
+}
+
+.sub_menu1 ul li:hover {
+  background-color: rgba(201, 198, 198, 0.425);
 }
 
 /* 4rd */
@@ -109,19 +178,14 @@ h5 {
   margin-top: 1%;
 }
 
-#procode {
-  /* border: 1px solid rebeccapurple; */
-  /* margin-top: -4%; */
-}
-
 .red {
-    border: 1px solid #e51549;
-    width: 30%;
-    padding: auto;
-    padding: 5px;
-    background-color: #e51549;
-    color: white;
-    margin-top: 0;
+  border: 1px solid #e51549;
+  width: 30%;
+  padding: auto;
+  padding: 5px;
+  background-color: #e51549;
+  color: white;
+  margin-top: 0;
 }
 
 #procode > div > p {
@@ -135,8 +199,8 @@ h5 {
   font-weight: bold;
 }
 
-.para{
-    margin-top: -8%;
+.para {
+  margin-top: -8%;
 }
 
 /* 6th */
@@ -203,10 +267,6 @@ img {
   margin-top: 2%;
 }
 
-.section1 {
-  /* border: 1px solid red; */
-}
-
 .section2 {
   /* border: 1px solid red; */
   display: flex;
@@ -233,16 +293,14 @@ img {
   border-radius: 50%;
 }
 
-.sec2a{
+.sec2a {
   /* border: 1px solid red; */
   cursor: pointer;
 }
 
 .sec_name {
-    /* border: 1px solid red; */
-    margin-top: auto;
-    font-weight: bold;
-    font-size: 20px;
+  /* border: 1px solid red; */
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 20px;
 }
-
-
