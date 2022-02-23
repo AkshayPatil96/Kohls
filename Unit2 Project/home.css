@@ -12,14 +12,16 @@
 #box1>.innerbox{
     border :2px solid blue;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .toptab{
-    /* display:inline-flexbox; */
-    justify-content: center;
-    border:2px solid black;
+    margin-left:125px;
+    position:absolute;
+    /* align-items: center; */
+    margin-top:-13px;
+    align-content: center;
+    /* border:2px solid black; */
     text-align: center;
-    padding-top: 1%;
     color:white;
     background-color: black;
     font-weight: bold;
