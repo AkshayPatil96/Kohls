@@ -25,6 +25,7 @@ document.getElementById("form").addEventListener("submit", function(event){
         // Creating a key in local storage and storing the above array into it
         localStorage.setItem("signupData", JSON.stringify(userData));
 
+        location.href = "/Homepage/index.html"
         // Clearing the fields after taking the data
         document.getElementById("firstName").value = "";
         document.getElementById("lastName").value = "";
