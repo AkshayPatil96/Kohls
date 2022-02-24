@@ -136,16 +136,17 @@ body {
 }
 
 .last_part {
-    text-align: center;
-    color: #666666;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 10%;
 }
 
 .last_part pre a {
-    color: black;
-    font-weight: bolder;
+  color: black;
+  font-weight: bolder;
 }
 
 .last_part pre a:hover {
-    color: #666666;
-    font-weight: bolder;
+  color: #666666;
+  font-weight: bolder;
 }
