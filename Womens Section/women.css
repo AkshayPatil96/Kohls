@@ -364,6 +364,6 @@ hr {
   border: 1px solid #b7b9bb81;
   height: auto;
   position: relative;
-  background-color: rgba(228, 222, 222, 0.315);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgba(236, 233, 233, 0.185);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
