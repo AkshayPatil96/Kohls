@@ -15,7 +15,7 @@ document.querySelector("#form").addEventListener("submit",data)
         {
             if(sign[i].email==Email&&sign[i].pass==Pass)
             {
-                windows.alert("Succesful");
+                windows.location.href="index.html";
             }
             else
             {
