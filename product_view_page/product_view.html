@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3755e5cb8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./product_view.css" />
+</head>
+<body>
+    <div id="full">
+        <div id="name_image">
+            <div id="name">
+                <h1 id="productName"></h1>
+            </div>
+            <div id="review">
+                <p><u>3.9/5</u> <u>(1617)</u> <u>Write a review</u> <u>Ask a question</u></p>
+            </div>
+            <div id="image">
+                <img id="productImage" src="" alt="product_image">
+            </div>
+        </div>
+        <div id="cartAdder">
+            <div id="sale_orignal_price">
+                <p>Sale :</p>
+                <p id="salePrice"></p>
+                <p>Orig :</p>
+                <p id="orignalPrice"></p>
+            </div>
+            <p id="finalPrice">
+                <span id="discountPrice"></span>
+                when you use
+            </p>
+            <p id="discountCode">
+                <span id="discount">EXTRA20</span>
+                <span>(20% OFF) at checkout</span>
+            </p>
+            <div class="line"></div>
+            <p id="size">
+                <span>SIZE:</span>
+                <span id="s">LARGE</span>
+            </p>
+            <div id="quantity">
+                <p>QUANTITY</p>
+                <div id="quantityBox">
+                    <button id="decrease" onclick="decrease()">-</button>
+                    <div><p id="quantityData"></p></div>
+                    <button id="increase" onclick="increase()">+</button>
+                </div>
+            </div>
+            <button id="addToCart" onclick="add()"><i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./product_view.js"></script>

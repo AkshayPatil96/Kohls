@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#full{
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+#name_image{
+    width: 55%;
+    /* border: 1px solid black; */
+    margin-right: 100px;
+}
+#cartAdder{
+    width: 25%;
+    height: 50%;
+    /* height: 300px; */
+    /* border: 1px solid black; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 22px;
+}
+#productName{
+    font-size: 26px;
+    font-weight: 400;
+}
+#image{
+    width: 576px;
+    height: 576px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+#productImage{
+    width: 100%;
+}
+#review{
+    font-size:13px;
+    font-weight:600
+}
+#sale_orignal_price{
+    display: flex;
+    text-decoration: line-through;
+    font-size:14px;
+    font-weight: 500;
+}
+#sale_orignal_price > p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#orignalPrice{
+    color: gray;
+}
+#salePrice{
+    margin-right: 10px;
+}
+#finalPrice{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+#discountPrice{
+    font-size:33px;
+    font-weight:700;
+    margin: 0;
+    margin-right: 15px;
+    color: #7E2C79;
+}
+#discountCode{
+    margin: 0;
+    font-size:14px;
+    font-weight: 500;
+}
+#discount{
+    color: #7E2C79;
+    font-weight:700; 
+    font-size: 16px;
+}
+.line{
+    border-top: 1px solid rgb(216, 216, 216);
+    margin: 10px;
+}
+#size{
+    font-size: 14px;
+    margin-top: 25px;
+}
+#s{
+    font-weight: bold;
+}
+#quantity>p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+#quantityBox{
+    border: 1px solid rgb(216, 216, 216);
+    width: 100px;
+    height: 40px;
+    display: flex;
+}
+#quantityBox > button{
+    background-color: white;
+    border: 0;
+    font-size: 26px;
+    width: 33%
+}
+#quantityBox > div{
+    /* font-size: 18px; */
+    width:33%;
+    margin: 0;
+    text-align: center;
+}
+#quantityBox > div > p{
+    margin: auto;
+    margin-top: 9px;
+}
+#addToCart{
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(21,113,139);
+    color: #F7FAFB;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px
+}
+#addToCart>i{
+    margin-right: 15px;
+}
