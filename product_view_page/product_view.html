@@ -113,6 +113,7 @@
         </ul>
       </nav>
 
+      <button id="back" onclick="back()"><i class="fa-solid fa-arrow-left"></i>Back</button>
 <!-- Product view -->
     <div id="full">
         <div id="name_image">
@@ -128,23 +129,28 @@
         </div>
         <div id="cartAdder">
             <div id="sale_orignal_price">
-                <p>Sale :</p>
-                <p id="salePrice"></p>
-                <p>Orig :</p>
+                <p>Original price : </p>
                 <p id="orignalPrice"></p>
+                <!-- <p>Orig :</p>
+                <p id=""></p> -->
             </div>
             <p id="finalPrice">
-                <span id="discountPrice"></span>
-                when you use
+                <span id="salePrice"></span>
             </p>
-            <p id="discountCode">
+            <!-- <p id="discountCode">
                 <span id="discount">EXTRA20</span>
                 <span>(20% OFF) at checkout</span>
-            </p>
+            </p> -->
             <div id="line"></div>
             <p id="size">
                 <span>SIZE:</span>
-                <span id="s">LARGE</span>
+                <!-- <span id="s">LARGE</span> -->
+                  <select name="sizeSelector" id="selectedSize">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
             </p>
             <div id="quantity">
                 <p>QUANTITY</p>
@@ -158,6 +164,10 @@
         </div>
     </div>
 
+    <div id="productDescription">
+      <h3>Product Description</h3>
+      <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deleniti praesentium eum quo quod, odio velit veniam dolor laborum maiores veritatis? Aut numquam ratione qui sit odio cumque totam adipisci.</p>
+    </div>
 <!-- Footer -->
     <div id="footer">
         <div id="flexi">

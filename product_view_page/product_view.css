@@ -6,7 +6,6 @@ body {
     width: 85%;
     margin: auto;
     display: flex;
-    margin-top: 70px;
 }
 #name_image{
     width: 55%;
@@ -53,15 +52,12 @@ body {
 #orignalPrice{
     color: gray;
 }
-#salePrice{
-    margin-right: 10px;
-}
 #finalPrice{
     margin: 0;
     font-size: 14px;
     font-weight: 700;
 }
-#discountPrice{
+#salePrice{
     font-size:33px;
     font-weight:700;
     margin: 0;
@@ -128,4 +124,38 @@ body {
 }
 #addToCart>i{
     margin-right: 15px;
+}
+#productDescription{
+    border: 3px solid rgb(216, 216, 216);
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 30px;
+    padding: 10px;
+}
+#productDescription > h3{
+    margin: 0;
+    border-bottom: 3px solid #15718B;
+    font-size: 16px;
+    display: inline;
+    font-weight: 600;
+}
+#description{
+    font-size: 14px;
+}
+#back{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #15718B;
+    border: 0;
+    color: white;
+    padding: 5px;
+    border-radius:10px;
+}
+#back > i{
+    margin-right: 5px;
+}
+#selectedSize{
+    height: 30px;
+    width: 50px;
+    border: 1px solid rgb(185, 185, 185);
 }
