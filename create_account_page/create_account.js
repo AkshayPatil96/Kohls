@@ -1,4 +1,5 @@
 var userData = JSON.parse(localStorage.getItem("signupData")) || [];
+console.log(userData);
 document.getElementById("form").addEventListener("submit", function(event){
     event.preventDefault();
     if(document.getElementById("firstName").value == "" || document.getElementById("lastName").value == "" || document.getElementById("email").value == "" || document.getElementById("password").value == "")
@@ -33,20 +34,3 @@ document.getElementById("form").addEventListener("submit", function(event){
         document.getElementById("password").value = "";
     }   
 })
-
-
-// function for account drop down.
-
-var btn1 = document.querySelector(".menu2");
-
-var list2 = document.querySelector(".acc_menu");
-
-list2.style.display = "none";
-
-btn1.addEventListener("click", function () {
-  if (list2.style.display == "none") {
-    list2.style.display = "block";
-  } else {
-    list2.style.display = "none";
-  }
-});
