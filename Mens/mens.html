@@ -1,395 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/9d6433328b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/Homepage/navbar.css" />
-    <link rel="stylesheet" href="/Mens/mens.css" />
-    <link rel="stylesheet" href="/Homepage/footer.css">
-    <title>Men's Section</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <div id="header">
-      Free shipping with $35 purchase. details Fast & free store pickup! details
-      Spend your Kohl's Cash® now. details
-    </div>
-    <nav>
-      <ul>
-        <div class="left side">
-          <li class="active">
-            <div class="logo">
-              <a id="kohl" href="/Homepage/index.html"><h1>KOHL'S</h1></a>
-            </div>
-          </li>
-          <li>
-            <div class="search">
-              <div class="wrapper">
-                <div class="search_box">
-                  <div class="search_btn"><i class="fas fa-search"></i></div>
-                  <input
-                    type="text"
-                    class="input_search"
-                    onkeyup="search()"
-                    placeholder="What are you looking for today?"
-                  />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/9d6433328b.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="/Homepage/navbar.css" />
+        <link rel="stylesheet" href="/Mens/mens.css" />
+        <link rel="stylesheet" href="/Homepage/footer.css" />
+        <title>Men's Section</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div id="header">
+            Free shipping with $35 purchase. details Fast & free store pickup!
+            details Spend your Kohl's Cash® now. details
+        </div>
+        <nav>
+            <ul>
+                <div class="left side">
+                    <li class="active">
+                        <div class="logo">
+                            <a id="kohl" href="/Homepage/index.html"
+                                ><h1>KOHL'S</h1></a
+                            >
+                        </div>
+                    </li>
+                    <li>
+                        <div class="search">
+                            <div class="wrapper">
+                                <div class="search_box">
+                                    <div class="search_btn">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        class="input_search"
+                                        onkeyup="search()"
+                                        placeholder="What are you looking for today?"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
-              </div>
-            </div>
-          </li>
-        </div>
-        <div class="right side">
-          <li>
-            <div class="hov account">
-              <a class="menu2" href="#"
-                ><i class="fa-regular fa-user"></i>
-                <p>Account</p></a
-              >
-              <div class="acc_menu">
+                <div class="right side">
+                    <li>
+                        <div class="hov account">
+                            <a class="menu2" href="#"
+                                ><i class="fa-regular fa-user"></i>
+                                <p>Account</p></a
+                            >
+                            <div class="acc_menu">
+                                <ul>
+                                    <li class="sign">
+                                        <div>
+                                            <a
+                                                class="a1"
+                                                href="/Sign up/signin.html"
+                                                >Sign In</a
+                                            >
+                                        </div>
+                                        <div>
+                                            <a
+                                                class="a2"
+                                                href="/create_account_page/create_account.html"
+                                                >Create Account</a
+                                            >
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                        <!-- <i class="fa-solid fa-wallet"></i> -->
+                                        <p><a href="#">Wallet</a></p>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                        <p><a href="#">Kohl's Reward</a></p>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                        <!-- <i class="fa-solid fa-credit-card"></i> -->
+                                        <p><a href="#">My Kohl's Card</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hov cart">
+                            <a href="#"
+                                ><i class="fa-solid fa-cart-shopping"></i>
+                                <p class="cart_price">$0.00</p>
+                                <p class="item_count">0</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hov checkout">
+                            <a href="#"
+                                ><i class="fa-regular fa-circle-right"></i>
+                                <p>Checkout</p></a
+                            >
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Sub Category Section -->
+
+        <div id="subhead">
+            <div class="sub_menu">
                 <ul>
-                  <li class="sign">
-                    <div>
-                      <a class="a1" href="/Sign up/signin.html">Sign In</a>
-                    </div>
-                    <div>
-                      <a
-                        class="a2"
-                        href="/create_account_page/create_account.html"
-                        >Create Account</a
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <a href="#"></a>
-                    <!-- <i class="fa-solid fa-wallet"></i> -->
-                    <p><a href="#">Wallet</a></p>
-                  </li>
-                  <li>
-                    <a href="#"></a>
-                    <p><a href="#">Kohl's Reward</a></p>
-                  </li>
-                  <li>
-                    <a href="#"></a>
-                    <!-- <i class="fa-solid fa-credit-card"></i> -->
-                    <p><a href="#">My Kohl's Card</a></p>
-                  </li>
+                    <li>
+                        <a class="menu" href="#"
+                            ><i class="fa-solid fa-bars"></i> Shop By
+                            Category</a
+                        >
+                        <div class="sub_menu1">
+                            <ul>
+                                <li>
+                                    <a href="/Womens Section/women.html"
+                                        >Women</a
+                                    >
+                                </li>
+                                <li><a href="/Mens/mens.html">Men</a></li>
+                                <li><a href="#">Junior</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">For the Home</a></li>
+                                <li><a href="#">Bed & Bath</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="menu" href="#"
+                            ><i class="fa-solid fa-star"></i> My Store: Select
+                            Store</a
+                        >
+                    </li>
                 </ul>
-              </div>
             </div>
-          </li>
-          <li>
-            <div class="hov cart">
-              <a href="#"
-                ><i class="fa-solid fa-cart-shopping"></i>
-                <p class="cart_price">$0.00</p>
-                <p class="item_count">0</p>
-              </a>
+            <div class="menu2">
+                <ul>
+                    <li>
+                        <a href="%"
+                            ><i class="fa-regular fa-credit-card"></i>Kohl's
+                            Card</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa-solid fa-file-invoice-dollar"></i
+                            >Kohl's Coupon</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa-regular fa-circle-question"></i
+                            >Help</a
+                        >
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li>
-            <div class="hov checkout">
-              <a href="#"
-                ><i class="fa-regular fa-circle-right"></i>
-                <p>Checkout</p></a
-              >
+        </div>
+
+        <!-- main body -->
+
+        <!-- 20% off banner -->
+
+        <div id="offer">
+            <div>
+                <div id="extra">
+                    <h4>Limited-Time Savings!</h4>
+                    <h5>Take an extra</h5>
+                </div>
+                <div id="off">
+                    <h1 class="t20">20</h1>
+                    <div>
+                        <h2 class="per">%</h2>
+                        <h2 class="peroff">off</h2>
+                    </div>
+                </div>
+                <div id="procode">
+                    <h5 class="red">online only.</h5>
+                    <div class="para">
+                        <p>Promo Code: EXTRA20</p>
+                        <p>Ends March 01. details & exclusions</p>
+                    </div>
+                </div>
             </div>
-          </li>
         </div>
-      </ul>
-    </nav>
 
-    <!-- Sub Category Section -->
+        <!-- free shopping banner -->
 
-    <div id="subhead">
-      <div class="sub_menu">
-        <ul>
-          <li>
-            <a class="menu" href="#"
-              ><i class="fa-solid fa-bars"></i> Shop By Category</a
-            >
-            <div class="sub_menu1">
-              <ul>
-                <li><a href="/Womens Section/women.html">Women</a></li>
-                <li><a href="/Mens/mens.html">Men</a></li>
-                <li><a href="#">Junior</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">For the Home</a></li>
-                <li><a href="#">Bed & Bath</a></li>
-              </ul>
+        <div id="free_ship">
+            <h1>FREE SHIPPING</h1>
+            <div id="sub_script">
+                <p>with a $35 purchase. <span>details</span></p>
             </div>
-          </li>
-          <li>
-            <a class="menu" href="#"
-              ><i class="fa-solid fa-star"></i> My Store: Select Store</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="menu2">
-        <ul>
-          <li>
-            <a href="%"><i class="fa-regular fa-credit-card"></i>Kohl's Card</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-file-invoice-dollar"></i>Kohl's Coupon</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- main body -->
-
-    <!-- 20% off banner -->
-
-    <div id="offer">
-      <div>
-        <div id="extra">
-          <h4>Limited-Time Savings!</h4>
-          <h5>Take an extra</h5>
         </div>
-        <div id="off">
-          <h1 class="t20">20</h1>
-          <div>
-            <h2 class="per">%</h2>
-            <h2 class="peroff">off</h2>
-          </div>
+
+        <!-- main body -->
+
+        <!-- category ofr mens -->
+        <div class="category_mens">
+            <div onclick="sh()" class="shirt">
+                <img
+                    src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="Shirts & T-Shirts"
+                />
+                <p>Shirts & Tees</p>
+            </div>
+            <div onclick="hoddie()" class="hoddie">
+                <img
+                    src="https://images.unsplash.com/photo-1638993029979-2fd6e7867660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG9kZGllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Hoddies"
+                />
+                <p>Hoddies</p>
+            </div>
+            <div onclick="jeans()" class="jeans">
+                <img
+                    src="https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGplYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Jeans"
+                />
+                <p>Jeans</p>
+            </div>
+            <div onclick="trou()" class="trouser">
+                <img
+                    src="https://images.unsplash.com/photo-1625178494269-c91109fcc711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGZvcm1hbCUyMHBhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Trousers"
+                />
+                <p>Trousers</p>
+            </div>
+            <div onclick="sport()" class="sport">
+                <img
+                    src="https://images.unsplash.com/photo-1601006696507-29aae73629ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGpvZ2dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="Sports Wear"
+                />
+                <p>Sports Wear</p>
+            </div>
         </div>
-        <div id="procode">
-          <h5 class="red">online only.</h5>
-          <div class="para">
-            <p>Promo Code: EXTRA20</p>
-            <p>Ends March 01. details & exclusions</p>
-          </div>
+        <hr />
+        <div id="container">
+            <!-- Sticky filter column -->
+
+            <div class="filter">
+                <ul>
+                    <li class="size">Size<i class="fa-solid fa-plus"></i></li>
+                    <div class="sub_filter1 d_down">
+                        <ul>
+                            <li><input class="tic xs" type="checkbox" />XS</li>
+                            <li><input class="tic s" type="checkbox" />S</li>
+                            <li><input class="tic m" type="checkbox" />M</li>
+                            <li><input class="tic l" type="checkbox" />L</li>
+                            <li><input class="tic xl" type="checkbox" />XL</li>
+                            <li>
+                                <input class="tic xxl" type="checkbox" />2XL
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="brand">Brand<i class="fa-solid fa-plus"></i></li>
+                    <div class="sub_filter d_down">
+                        <ul>
+                            <li><input class="tic" type="checkbox" />Levi's</li>
+                            <li><input class="tic" type="checkbox" />Nike</li>
+                            <li><input class="tic" type="checkbox" />Lee</li>
+                            <li><input class="tic" type="checkbox" />Hagger</li>
+                            <li>
+                                <input class="tic" type="checkbox" />Tek Gear
+                            </li>
+                        </ul>
+                    </div>
+                    <li>Material<i class="fa-solid fa-plus"></i></li>
+                    <li>Price<i class="fa-solid fa-plus"></i></li>
+                    <li>Pattern<i class="fa-solid fa-plus"></i></li>
+                    <li>Neckline<i class="fa-solid fa-plus"></i></li>
+                    <li>Sleeve Length<i class="fa-solid fa-plus"></i></li>
+                    <li>Occasion<i class="fa-solid fa-plus"></i></li>
+                    <li>Color<i class="fa-solid fa-plus"></i></li>
+                    <li>Customer Rating<i class="fa-solid fa-plus"></i></li>
+                </ul>
+            </div>
+
+            <div class="main_body">
+                <!-- Sorting window -->
+
+                <div class="sort">
+                    <h4>All Products (<span class="count"></span>)</h4>
+                    <p>
+                        Sort By
+                        <span>
+                            <select
+                                name="Sorting"
+                                id="sort_item"
+                                onchange="sortItems()"
+                            >
+                                <option class="featured" value="featured">
+                                    Featured
+                                </option>
+                                <option class="l2h" value="l2h">
+                                    Price Low-High
+                                </option>
+                                <option class="h2l" value="h2l">
+                                    Price High-Low
+                                </option>
+                                <option class="rating" value="rating">
+                                    High Rating
+                                </option>
+                            </select>
+                        </span>
+                    </p>
+                </div>
+                <!-- <hr /> -->
+
+                <!-- Mens Data Display -->
+
+                <div class="items">
+                  <div class="itm">
+                    <img class="img" src="" alt="">
+                    <h3 class="o_p"></h3>
+                    <p class="r_p"></p>
+                    <h5 class="name"></h5>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <!-- free shopping banner -->
-
-    <div id="free_ship">
-      <h1>FREE SHIPPING</h1>
-      <div id="sub_script">
-        <p>with a $35 purchase. <span>details</span></p>
-      </div>
-    </div>
-
-    <!-- main body -->
-
-    <!-- category ofr mens -->
-    <div class="category_mens">
-      <div class="shirt">
-        <img
-          src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-          alt="Shirts & T-Shirts"
-        />
-        <p>Shirts & Tees</p>
-      </div>
-      <div class="hoddie">
-        <img
-          src="https://images.unsplash.com/photo-1638993029979-2fd6e7867660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG9kZGllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Hoddies"
-        />
-        <p>Hoddies</p>
-      </div>
-      <div class="jeans">
-        <img
-          src="https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGplYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Jeans"
-        />
-        <p>Jeans</p>
-      </div>
-      <div class="trouser">
-        <img
-          src="https://images.unsplash.com/photo-1625178494269-c91109fcc711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGZvcm1hbCUyMHBhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Trousers"
-        />
-        <p>Trousers</p>
-      </div>
-      <div class="sport">
-        <img
-          src="https://images.unsplash.com/photo-1601006696507-29aae73629ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGpvZ2dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-          alt="Sports Wear"
-        />
-        <p>Sports Wear</p>
-      </div>
-    </div>
-    <hr />
-    <div id="container">
-      <!-- Sticky filter column -->
-
-      <div class="filter">
-        <ul>
-          
-          <li class="size">Size<i class="fa-solid fa-plus"></i></li>
-          <div class="sub_filter1 d_down">
-            <ul>
-              <li><input class="tic xs" type="checkbox" />XS</li>
-              <li><input class="tic s" type="checkbox" />S</li>
-              <li><input class="tic m" type="checkbox" />M</li>
-              <li><input class="tic l" type="checkbox" />L</li>
-              <li><input class="tic xl" type="checkbox" />XL</li>
-              <li><input class="tic xxl" type="checkbox" />2XL</li>
-            </ul>
-          </div>
-          <li class="brand">Brand<i class="fa-solid fa-plus"></i></li>
-          <div class="sub_filter d_down">
-            <ul>
-              <li><input class="tic" type="checkbox" />Levi's</li>
-              <li><input class="tic" type="checkbox" />Nike</li>
-              <li><input class="tic" type="checkbox" />Lee</li>
-              <li><input class="tic" type="checkbox" />Hagger</li>
-              <li><input class="tic" type="checkbox" />Tek Gear</li>
-            </ul>
-          </div>
-          <li>Material<i class="fa-solid fa-plus"></i></li>
-          <li>Price<i class="fa-solid fa-plus"></i></li>
-          <li>Pattern<i class="fa-solid fa-plus"></i></li>
-          <li>Neckline<i class="fa-solid fa-plus"></i></li>
-          <li>Sleeve Length<i class="fa-solid fa-plus"></i></li>
-          <li>Occasion<i class="fa-solid fa-plus"></i></li>
-          <li>Color<i class="fa-solid fa-plus"></i></li>
-          <li>Customer Rating<i class="fa-solid fa-plus"></i></li>
-        </ul>
-      </div>
-
-      <div class="main_body">
-        <!-- Sorting window -->
-
-        <div class="sort">
-          <h4>All Products (<span class="count"></span>)</h4>
-          <p>
-            Sort By
-            <span>
-              <select name="Sorting" id="sort_item" onchange="sortItems()">
-                <option class="featured" value="featured">Featured</option>
-                <option class="l2h" value="l2h">Price Low-High</option>
-                <option class="h2l" value="h2l">Price High-Low</option>
-                <option class="rating" value="rating">High Rating</option>
-              </select>
-            </span>
-          </p>
-        </div>
-        <!-- <hr /> -->
-
-        <!-- Mens Data Display -->
-
-        <div class="items"></div>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
+        <!-- Footer Section -->
 
         <div id="footer">
-        <div id="flexi">
-            <div class="s_logo">
-                <p>CONNECT <br> WITH US</p>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="line"></div>
-            <div class="rightf">
-                <h3>GET OUR <br> APP</h3>
-                <div>
-                    <img src="https://media.kohlsimg.com/is/image/kohls/AppStore-qr_code2020?scl=1&fmt=png8" alt="">
+            <div id="flexi">
+                <div class="s_logo">
+                    <p>
+                        CONNECT <br />
+                        WITH US
+                    </p>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <div>
-                    <p>Scan the code to download <br> the Kohl's App today.</p>
-                    <p class="btn">learn More</p>
+                <div class="line"></div>
+                <div class="rightf">
+                    <h3>
+                        GET OUR <br />
+                        APP
+                    </h3>
+                    <div>
+                        <img
+                            src="https://media.kohlsimg.com/is/image/kohls/AppStore-qr_code2020?scl=1&fmt=png8"
+                            alt=""
+                        />
+                    </div>
+                    <div>
+                        <p>
+                            Scan the code to download <br />
+                            the Kohl's App today.
+                        </p>
+                        <p class="btn">learn More</p>
+                    </div>
                 </div>
-
             </div>
-        </div>
-        <hr class="hr_line">
-        <div id="list">
-            <div class="footer-col">
-                <h4>CUSTOMER SERVICE</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Rebates</a></li>
-                    <li><a href="#">Recalls</a></li>
-                    <li><a href="#">Product Guides</a></li>
-                    <li><a href="#">Kohl's Blog</a></li>
-                    <li><a href="#">Kohl's Cash</a></li>
-
-                </ul>
+            <hr class="hr_line" />
+            <div id="list">
+                <div class="footer-col">
+                    <h4>CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Rebates</a></li>
+                        <li><a href="#">Recalls</a></li>
+                        <li><a href="#">Product Guides</a></li>
+                        <li><a href="#">Kohl's Blog</a></li>
+                        <li><a href="#">Kohl's Cash</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SHOP KOHL’S</h4>
+                    <ul>
+                        <li>
+                            <a href="#"
+                                >Get 15% off when you <br />
+                                sign up for our emails</a
+                            >
+                        </li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Kohl's Coupons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MY ACCOUNT</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Update Password</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Rewards</a></li>
+                        <li>
+                            <a href="#"
+                                >Gift Card Balance & <br />
+                                Kohl's Cash Balance</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>KOHL'S CARD</h4>
+                    <ul>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Pay & Manage Card</a></li>
+                        <li><a href="#">Apply for a Kohl's Card</a></li>
+                        <li><a href="#">See if you prequalify</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ABOUT KOHL'S</h4>
+                    <ul>
+                        <li><a href="#">Our Websites</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Diversity & Inclusion</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Apply for Seasonal Jobs</a></li>
+                        <li><a href="#">Associate Services</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Advertise with Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>SHOP KOHL’S</h4>
-                <ul>
-                    <li><a href="#">Get 15% off when you <br> sign up for our emails</a></li>
-                    <li><a href="#">Site Map</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">Kohl's Coupons</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>MY ACCOUNT</h4> 
-                <ul>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">My Account</a></li>
-                <li><a href="#">Update Password</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Rewards</a></li>
-                <li><a href="#">Gift Card Balance & <br> Kohl's Cash Balance</a></li>
-            </ul>
-            </div>
-            <div class="footer-col">
-                <h4>KOHL'S CARD</h4>
-                <ul>
-                    <li><a href="#">Benefits</a></li>
-                    <li><a href="#">Pay & Manage Card</a></li>
-                    <li><a href="#">Apply for a Kohl's Card</a></li>
-                    <li><a href="#">See if you prequalify</a></li>
-
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>ABOUT KOHL'S</h4>
-                <ul>
-                    <li><a href="#">Our Websites</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Diversity & Inclusion</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Apply for Seasonal Jobs</a></li>
-                    <li><a href="#">Associate Services</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Affiliate Program</a></li>
-                    <li><a href="#">Advertise with Us</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        <hr class="hr_line">
-        <div class="last_part">
-            <pre>© 2022 Kohl’s, Inc.
+            <hr class="hr_line" />
+            <div class="last_part">
+                <pre>
+© 2022 Kohl’s, Inc.
 KOHL’S® and Kohl’s brand names are trademarks owned by KIN, Inc.
-All rights reserved.</pre>
-<pre>Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark of Apple Inc.</pre>
-<pre><a href="#">Legal Notice</a>,<a href="#"> Privacy Policy</a>,<a href="#"> Privacy Policy</a>,<a href="#"> CA-Do Not Sell My Personal Information</a>,<a href="#">About our ads</a>,<a href="#"> California Transparency in Supply Chains Act.</a></pre>
+All rights reserved.</pre
+                >
+                <pre>
+Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark of Apple Inc.</pre
+                >
+                <pre><a href="#">Legal Notice</a>,<a href="#"> Privacy Policy</a>,<a href="#"> Privacy Policy</a>,<a href="#"> CA-Do Not Sell My Personal Information</a>,<a href="#">About our ads</a>,<a href="#"> California Transparency in Supply Chains Act.</a></pre>
+            </div>
         </div>
-    </div>
-
-
-  </body>
-  <script src="/Mens/mens.js"></script>
-  <script src="/Homepage/Dropdown.js"></script>
-  <script src="/Homepage/category dropdown.js"></script>
+    </body>
+    <script src="/Mens/mens.js"></script>
+    <script src="/Homepage/Dropdown.js"></script>
+    <script src="/Homepage/category dropdown.js"></script>
 </html>
