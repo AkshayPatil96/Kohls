@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="paymentinput.css">
+</head>
+
+<body>
+    <div id="main">
+    <div id="topbx">
+        <form action="" id="form">
+        <h3>How do you want to pay?</h3>
+        <p id="paybtn1"class="paybtn">Kohl's Card</p>
+        <p class="paybtn" id="paybtn2">Credit or Debit card</p>
+    </div>
+
+    <div id="topbxb">
+        <h1>Card details</h1>
+
+        <p>Card Holder Name</p>
+        <input class="full" type="text" id="chname" minlength="5" placeholder="">
+
+        <p>Card Number</p>
+        <input class="full" type="number" id="cnum" minlength="10" placeholder="">
+
+
+        <div class="hor">
+            <div>
+                <p>Expiration (MM/YY)</p>
+                <input class="city" type="number" id="exp" placeholder="">
+            </div>
+
+            <div>
+                <p>Security Code</p>
+                <input class="state" type="number" id="secu" placeholder="">
+            </div>
+        </div>
+
+
+        <div class="hor">
+                <input type="submit"  id="bt1" class="btsize" value="Done"></input>
+
+                <input type="submit" id="bt2" value="Cancel" class="btsize"></input>
+        </div>
+    </div>
+</forn>
+    <!-- billing address -->
+    <div class="container01">
+<forn id="form2">
+        <h2 >Bill to new address</h2>
+        <p> Bill to a military address</p>
+<div class="fname">
+        <p>First Name</p>
+        <!-- <hr class="full"> -->
+        <input class="full" type="text" id="fname">
+    </div>
+    <div class="lname">
+        <p>Last Name</p>
+        <input class="full" id="lname">
+    </div>
+
+        <p>Street Address</p>
+        <input class="full" type="text" id="stadd" >
+
+        <p>Apartment, suite or unit</p>
+        <input class="half" id="apart">
+
+        <p>Zip Code</p>
+        <input class="half" type="number"id="zip">
+
+
+        <div class="hor1">
+            <div>
+                <p>City</p>
+                <input class="city" type="text" id="c">
+            </div>
+
+            <div>
+                <p>State</p>
+                <input class="state" type="text" id="s">
+            </div>
+
+        </div>
+        <p>Phone Number</p>
+        <input class="full" type="number" id="phone">
+        <div class="hor" >
+            <input type="submit" id="btb1" class="btsize" value="Done"></input>
+
+            <input type="submit" id="btb2" class="btsize" value="Cancel"></input>
+    </div>
+</form>
+    </div>
+</div>
+</html>
+<script src="paymentinput.js"></script>

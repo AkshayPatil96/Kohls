@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(245,245,245);
+    /* font-size:16px; */
+}
+
+p{
+    color:rgba(66, 65, 65, 0.841);
+    font-size: 20px;
+}
+/* #naddress {
+    color: aqua;
+    background-color: crimson;
+    font-size: 28px;
+} */
+#topbx{
+    height:150px;
+    width:524px;
+    background-color: white;
+    margin-left:600px;
+    padding-left:15px;
+    
+}
+#paybtn1{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color:white
+}
+#paybtn2{
+    cursor: pointer;
+    /* background-color: rgb(255, 255, 255); */
+    color:rgb(5, 5, 5)
+}
+#topbxb{
+    height:531px;
+    width:524px;
+    background-color: white;
+    margin-left:600px;
+    padding-left:15px;
+}
+#topbxb p{
+    margin-bottom: 50px;
+}
+.paybtn{
+    color:black;
+    border:2px solid black;
+    width:240px;
+    height:28px;
+    font-weight: bold;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    border-radius:5px;
+    /* color:black; */
+}
+.btsize{
+    border: 1px solid black;
+    text-align: center;
+    height:30px;
+    width:90px;
+    margin-top:60px;
+    padding-top:05px;
+}
+.hor{
+    display: flex;
+    gap:30px;
+   
+}
+#bt1{
+    background-color: black;
+    color:white;
+}
+
+#bt2{
+    color:black;
+    
+}
+.container01{
+    background-color: white;
+    margin-left:600px;
+    height: 832.76px;
+    width:524px;
+    /* border:2px solid black; */
+    padding-left:15px;
+   /* display: none; */
+  
+}
+div>h2+p{
+    color :green;
+    font-weight: bold;
+
+}
+input{
+    /* margin-left:0px; */
+    margin-top:10px;
+    
+}
+.full{
+    border:none;
+    outline:none;
+    border-bottom:1px solid rgba(97, 95, 95, 0.623);
+    width:90%;
+    
+}
+.half{
+    outline:none;
+    border:none;
+    border-bottom:1px solid rgba(97, 95, 95, 0.623);
+    width:40%;
+}
+.hor1{
+    display: flex;
+    gap:90px;
+    /* margin:auto; */
+    /* text-align:left; */
+}
+.city{
+    border:none;
+    outline:none;
+    border-bottom:1px solid rgba(97, 95, 95, 0.623);
+    /* border:2px solid yellow; */
+    /* width: 400px; */
+}
+.state{
+    outline:none;
+    /* border:2px solid blue; */
+    border:none;
+    border-bottom:1px solid rgba(97, 95, 95, 0.623);
+    /* margin-left:400px; */
+    /* width:30%; */
+}
+#c {
+    width: 300px;
+}
+#s {
+    width: 45%;
+}
+#btb1{
+    background-color: black;
+    color:white;
+}
+
+#btb2{
+    color:black;
+    
+}
