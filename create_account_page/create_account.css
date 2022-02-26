@@ -187,3 +187,107 @@ label{
     margin-top: 20px;
     margin-left: 80px;
 }
+
+@media only screen and (min-width: 450px) and (max-width: 770px){
+    #container{
+        width: 80%;
+        padding: 50px;
+        margin-top: 0;
+    }
+    .inStore{
+        height: 20px;
+        width: 20px;
+    }
+    label{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    #submitForm > a{
+        font-size: 14px;
+    }
+    #subscribe > p{
+        font-size: 13px;
+    }
+    .check > input{
+        height: 20px;
+    }
+    .check > p{
+        margin-top: 5px;
+    }
+    #rewards > img{
+        height: 20px;
+    }
+    #submitForm > input{
+        font-size: 15px;
+        height: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 50px) and (max-width: 459px){
+    #container{
+        width: 80%;
+        padding: 10px;
+        margin-top: 0;
+    }
+    #form{
+        width: 100%;
+    }
+    #first_last_name,#email_password{
+        display: grid;
+    }
+    #firstName,#lastName,#email,#password{
+        width: 300px;
+    }
+    #firstName,#email{
+        margin-bottom: 20px;
+    }
+    .check + div{
+        width: 100%;
+    }
+    .check > input{
+        height: 20px;
+    }
+    .check > p{
+        margin-top: 5px;
+    }
+    #rewards > img{
+        height: 15px;
+    }
+    .inStore{
+        height: 15px;
+        width: 15px;
+    }
+    label{
+        font-size: 12px;
+        margin: 2px 0;
+    }
+    #reward_enrollment{
+        display: grid;
+        margin: 15px;
+    }
+    .radioButtons{
+        margin-bottom: 15px;
+    }
+    #subscribe > p{
+        font-size: 12px;
+    }
+    .lin{
+        margin-top: 15px;
+    }
+    h4{
+        font-size: 16px
+    }
+    h3+p{
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+    #submitForm > input{
+        font-size: 12px;
+        height: 35px;
+        width: 200px
+    }
+    #submitForm > a{
+        font-size: 12px;
+    }
+}
