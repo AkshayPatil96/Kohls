@@ -19,7 +19,7 @@ document.querySelector("#paybtn2").addEventListener("click", function(){
  document.querySelector("#form").addEventListener("submit", myFormSubmit);
 
  var signupArr = JSON.parse(localStorage.getItem("signUpDetails")) || [];
- function myFormSubmit() {
+ function myFormSubmit(event) {
    event.preventDefault();
    var signupObj = {
      cardHolderName: document.querySelector("#chname").value,
