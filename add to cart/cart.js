@@ -27,6 +27,8 @@ var data=JSON.parse(localStorage.getItem("cartItems"))||[
 }
 ]
 
+// JSON.parse(localStorage.getItem("shopCart"))      Soumya's product view item
+
 
 // console.log(data[0].color,data[0].size)
 
