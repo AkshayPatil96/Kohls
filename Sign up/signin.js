@@ -1,28 +1,26 @@
-  var sign=JSON.parse(localStroge.getItem("signupData"));
+var sign = JSON.parse(localStorage.getItem("signupData"));
 document.querySelector("#form").addEventListener("submit",data)
 
-    function data()
+    function data(e)
     {
-        var email=document.querySelector("#email").value;
-        var pass=document.querySelector("#pass").value;
+        e.preventDefault();
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#pass").value;
 
-        var database={
-            Email:email,
-            Pass:pass,
+        var database ={
+            email: email,
+            pass: pass
         };
          
         for(var i=0;i<sign.length;i++)
         {
-            if(sign[i].email==Email&&sign[i].pass==Pass)
+            if(sign[i].email == email && sign[i].pass == pass)
             {
-                windows.location.href="index.html";
+                location.href="/Homepage/index.html";
             }
             else
             {
-               windows.alert("Wrong Email or Pass");
+               alert("Wrong Email or Pass");
             }
         }
     }
-
-
-    
