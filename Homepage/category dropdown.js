@@ -12,3 +12,7 @@ btn.addEventListener("click", function () {
     list.style.display = "none";
   }
 });
+
+// mobile view seach dropdown
+
+

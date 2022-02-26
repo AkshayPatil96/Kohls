@@ -23,95 +23,134 @@
 </head>
 <body>
 <!-- Navbar -->
+    
+      <!-- 1st = offer header -->
+
     <div id="header">
-        Free shipping with $35 purchase. details Fast & free store pickup! details
-        Spend your Kohl's Cash® now. details
-      </div>
-  
-      <!-- 2nd -->
-  
-      <nav>
-        <ul>
-          <div class="left side">
-            <li class="active">
-              <div class="logo">
-                <a id="kohl" href="/Homepage/index.html"><h1>KOHL'S</h1></a>
-              </div>
-            </li>
-            <li>
-              <div class="search">
-                <div class="wrapper">
-                  <div class="search_box">
-                    <div class="search_btn"><i class="fas fa-search"></i></div>
-                    <input
-                      type="text"
-                      class="input_search"
-                      placeholder="What are you looking for today?"
-                    />
-                  </div>
-                </div>
-              </div>
-            </li>
-          </div>
-          <div class="right side">
-            <li>
-              <div class="hov account">
-                <a class="menu2" href="#"
-                  ><i class="fa-regular fa-user"></i>
-                  <p>Account</p></a
-                >
-                <div class="acc_menu">
+      Free shipping with $35 purchase. details Fast & free store pickup! details
+      Spend your Kohl's Cash® now. details
+    </div>
+
+    <!-- 2nd = sticky navbar -->
+
+    <nav>
+      <ul>
+        <div class="left side">
+          <li class="active">
+            <div class="logo">
+              <i class="fa-solid fa-bars ham open"></i>
+
+              <!-- ham design for mobile view -->
+              
+              <div class="mob_menu">
+                <i class="fa-solid fa-xmark close"></i>
+                <div>
+                  <button class="bon1">Sign In</button>
+                  <button class="bon2">Create Account</button>
                   <ul>
-                    <li class="sign">
-                      <div>
-                        <a class="a1" href="/Sign up/signin.html">Sign In</a>
-                      </div>
-                      <div>
-                        <a
-                          class="a2"
-                          href="/create_account_page/create_account.html"
-                          >Create Account</a
-                        >
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#"></a>
-                      <!-- <i class="fa-solid fa-wallet"></i> -->
-                      <p><a href="#">Wallet</a></p>
-                    </li>
-                    <li>
-                      <a href="#"></a>
-                      <p><a href="#">Kohl's Reward</a></p>
-                    </li>
-                    <li>
-                      <a href="#"></a>
-                      <!-- <i class="fa-solid fa-credit-card"></i> -->
-                      <p><a href="#">My Kohl's Card</a></p>
-                    </li>
+                    <li><i class="fa-solid fa-house"></i>Home</li>
+                    <li class="sub_menu"><i class="fa-solid fa-list"></i>Shop By Category
+                    <ul class="cata_list">
+                      <li>Mens</li>
+                      <li>Women</li>
+                      <li>Kids</li>
+                      <li>Home</li>
+                    </ul>
+                  </li>
+                    <li><i class="fa-solid fa-store"></i>Shop My Store</li>
+                    <li><i class="fa-solid fa-dollar-sign"></i>Kohl's Coupons</li>
+                    <li><i class="fa-regular fa-credit-card"></i>Kohl's Card</li>
+                    <li><i class="fa-solid fa-gift"></i>Order</li>
+                    <li><i class="fa-solid fa-circle-info"></i>Help</li>
                   </ul>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="hov cart">
-                <a href="#"
-                  ><i class="fa-solid fa-cart-shopping"></i>
-                  <p class="cart_price">$0.00</p>
-                  <p class="item_count">0</p>
-                </a>
+              <a id="kohl" href="/Homepage/index.html"><h1>KOHL'S</h1></a>
+            </div>
+          </li>
+          <li class="list_search">
+            <div class="search">
+              <div class="wrapper">
+                <div class="search_box">
+                  <div class="search_btn"><i class="fas fa-search"></i></div>
+                  <input
+                    type="text"
+                    class="input_search"
+                    placeholder="What are you looking for today?"
+                  />
+                </div>
               </div>
-            </li>
-            <li>
-              <div class="hov checkout">
-                <a href="#"
-                  ><i class="fa-regular fa-circle-right"></i>
-                  <p>Checkout</p></a
-                >
+            </div>
+          </li>
+        </div>
+        <div class="right side">
+          <li><i class="fa-solid fa-magnifying-glass srch"></i></li>
+          <li>
+            <div class="hov account">
+              <a class="menu2" href="#"
+                ><i class="fa-regular fa-user"></i>
+                <p class="f_name">Account</p></a
+              >
+              <div class="acc_menu">
+                <ul>
+                  <li class="sign">
+                    <div>
+                      <a class="a1" href="/Sign up/signin.html">Sign In</a>
+                    </div>
+                    <div>
+                      <a
+                        class="a2"
+                        href="/create_account_page/create_account.html"
+                        >Create Account</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                    <!-- <i class="fa-solid fa-wallet"></i> -->
+                    <p><a href="#">Wallet</a></p>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                    <p><a href="#">Kohl's Reward</a></p>
+                  </li>
+                  <li>
+                    <a href="#"></a>
+                    <!-- <i class="fa-solid fa-credit-card"></i> -->
+                    <p><a href="#">My Kohl's Card</a></p>
+                  </li>
+                </ul>
               </div>
-            </li>
-          </div>
-        </ul>
-      </nav>
+            </div>
+          </li>
+          <li>
+            <div class="hov cart">
+              <a href="/add to cart/cartpage.html"
+                ><i class="fa-solid fa-cart-shopping s_cart"><span class="item_count">0</span></i>
+                <p class="cart_price">$0.00</p>
+                
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="hov checkout">
+              <a href="#"
+                ><i class="fa-regular fa-circle-right"></i>
+                <p>Checkout</p></a
+              >
+            </div>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- search section for mobile view -->
+
+    <div id="mob_srch">
+      <i class="fas fa-search"></i>
+      <input class="mob_srch_panel" type="text" placeholder="What are you looking for today?">
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </div>
 
       <button id="back" onclick="back()"><i class="fa-solid fa-arrow-left"></i>Back</button>
 <!-- Product view -->

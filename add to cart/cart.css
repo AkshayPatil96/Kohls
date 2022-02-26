@@ -5,8 +5,9 @@
      margin:auto;
     margin-top: 20px;
      display:flex;
-
+     /* border:1px solid red; */
  }
+
  #left{
      height:95%;
      width:60%;
@@ -20,13 +21,13 @@
 
  .leftside{
      width:90%;
-     height:80px;
+     /* height:80px; */
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      margin-bottom:10px;
  }
 
 #leftside{
-    height:auto;
+    /* height:auto; */
     width:90%;
     /* border:1px solid teal; */
     margin-bottom:10px;
@@ -95,11 +96,13 @@ line-height:8px
 }
 
 .line{
-line-height: 10px;
-margin:20px 100px;
-letter-spacing: 1.5px;
-
+/* line-height: 10px; */
+/* margin:20px 100px; */
+letter-spacing: 1px;
+text-align: center;
+/* margin: auto; */
 }
+
 h1{
 line-height: 70px;;
 text-align: center;

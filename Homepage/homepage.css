@@ -6,6 +6,11 @@ body {
     padding: 0%;
 }
 
+#fullBody{
+    width: 100%;
+    border: 1px solid red;
+}
+
 /* 3nd */
 
 #subhead {
@@ -250,8 +255,9 @@ h5 {
 }
 .brand {
     /* border: 1px solid red; */
-    width: 80%;
-    margin-left: 35%;
+    width: 100%;
+    /* padding: 2px; */
+    margin-left: 20%;
     margin-top: -10%;
 }
 
@@ -264,7 +270,7 @@ h5 {
     font-size: 20px;
     border: 1px solid;
     width: 36%;
-    padding: 10px;
+    padding: 5px;
     color: white;
     margin-left: 35%;
     background-color: black;
@@ -470,22 +476,28 @@ h4:hover {
     margin-top: 90px;
     color: black;
 }
+
 #box3 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     margin-left: 5%;
     /* margin:auto; */
     height: 300px;
     /* gap:20px; */
     margin-top: -20px;
+    /* border: 3px solid black; */
 }
+
 #box3 img {
+    display: flex;
     /* border: 3px solid black; */
     height: 180px;
     width: 100%;
     /* padding-top:20px; */
 }
+
 .innerbox2 {
     /* border: 3px solid black; */
     text-align: center;
@@ -493,6 +505,7 @@ h4:hover {
     font-size: 18px;
     width: 15%;
 }
+
 #box4 {
     display: flex;
     flex-wrap: wrap;
@@ -501,21 +514,25 @@ h4:hover {
     margin-left: 5%;
     margin-top: 40px;
 }
+
 #box4 img {
     height: 250px;
     width: 300px;
 }
+
 .innerbox3 p {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
 }
+
 #box5 .innerbox4 {
     margin: auto;
     /* border:2px solid black; */
     width: 90%;
     margin-top: 30px;
 }
+
 #box5 .innerbox4 img {
     width: 100%;
 }
@@ -528,3 +545,25 @@ h4:hover {
 #box6 .innerbox5 img {
     width: 100%;
 }
+
+/* mobile search display hidden */
+#mob_srch{
+    display: none;
+}
+
+ @media all and (min-width: 50px) and (max-width: 450px){
+
+    #subhead{
+      border: 1px solid green;
+      display: none;
+
+    }
+
+    #box2{
+        /* display: none; */
+    }
+
+    #box2 {
+        display: none;
+    }
+ }

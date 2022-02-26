@@ -2,27 +2,7 @@
     font-family:"Gotham 4r", Helvetica, Arial, sans-serif;
     /* background-color: whitesmoke; */
 }
-#main{
- height: 70px;
- width: 100%;
- background-color: #fff;;  
- display: flex;
-}
-#logo{
-    height: 27px;
-    width: 10.2%;
-    margin-top: 15px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-input{
-    height: 40px;
-    width: 40%;
-    margin-top: 13px;
-    margin-left: 20px;
-    font-size: large;
 
-}
 
 #continue{
     display: flex;

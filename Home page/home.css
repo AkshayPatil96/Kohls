@@ -24,7 +24,7 @@
 }
 .toptab{
     margin-left:125px;
-    position:absolute;
+    /* position:absolute; */
     /* align-items: center; */
     margin-top:-13px;
     align-content: center;
@@ -37,7 +37,7 @@
     height:25px;
 }
 .bottom{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     /* flex-wrap: wrap; */
     margin-top: 323px;
