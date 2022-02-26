@@ -58,7 +58,7 @@ document.querySelector("#paybtn2").addEventListener("click", function(){
     }));
 
     if(document.querySelector("#btb1").addEventListener("click",function(){
-      window.location.href = "paycomplete.html";
+      window.location.href = "/payment page/paycomplete.html"
     })); 
     if(document.querySelector("#bt2").addEventListener("click",function(){
       document.querySelector("#form").value="";
