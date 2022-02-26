@@ -10,7 +10,10 @@ function display(data) {
         document.getElementById("salePrice").innerText = "$"+elem.saleprice* count;   
         document.getElementById("orignalPrice").innerText = "$"+elem.originalprice* count;
         document.getElementById("quantityData").innerText = count;
-        // document.getElementById("description").innerText =                              //   element.description to be added
+        if(elem.detail != undefined)
+        {
+            document.getElementById("description").innerText = elem.detail; 
+        }
     });
 }
 
