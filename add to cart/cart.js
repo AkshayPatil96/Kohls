@@ -121,7 +121,7 @@ totalPrice(data)
 function totalPrice(arr){
     var itemCOunt=document.getElementById("count")
 
-    itemCOunt.textContent="("+data.length+")"
+    itemCOunt.textContent= data.length
 
 total(arr)
 
