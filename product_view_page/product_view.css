@@ -163,7 +163,7 @@ body {
 @media only screen and (min-width: 50px) and (max-width: 459px){
     #full{
         display: grid;
-        width: 100%;
+        width: 80%;
         padding: 50px
         /* justify-content: center; */
     }
@@ -175,7 +175,8 @@ body {
         width:350px;
     }
     #productName{
-        font-size: 22px
+        font-size: 22px;
+        width: 300px;
     }
     #cartAdder{
         width: 50%;
