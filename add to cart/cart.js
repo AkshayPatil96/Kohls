@@ -1,47 +1,4 @@
 var data=JSON.parse(localStorage.getItem("shopCart"))
-//||[
-//     {
-//         img:"https://media.kohlsimg.com/is/image/kohls/3614715_White?wid=180&hei=180&op_sharpen=1",
-//         size:"Medium",
-//         color:"Red",
-//         Name:"Men's Champion® Graphic Tee",
-//         price:"14.00",
-
-//     },{
-        
-//             img:"https://media.kohlsimg.com/is/image/kohls/3614715_White?wid=180&hei=180&op_sharpen=1",
-//             size:"Medium",
-//             color:"Red",
-//             Name:"Men's Champion® Graphic Tee",
-//             price:"14.00",
-    
-        
-//     },{
-        
-//         img:"https://media.kohlsimg.com/is/image/kohls/3614715_White?wid=180&hei=180&op_sharpen=1",
-//         size:"Medium",
-//         color:"Red",
-//         Name:"Men's Champion® Graphic Tee",
-//         price:"14.00",
-
-    
-// }
-// ]
-
-// {
-//     img: "https://media.kohlsimg.com/is/image/kohls/3583992_ALT?wid=240&hei=240&op_sharpen=1",
-//     saleprice: 41.25,
-//     originalprice: 55.0,
-//     name: "Men's Nike Sportswear Club Fleece Pullover Hoodie",
-//     gender: "men",
-//     size: "L",
-//     category: "h",
-//     detail: "Give your casual look a little extra zip with this men's Nike hoodie. Soft super fleece lining. Zip front. Long sleeves.",
-// },
-// JSON.parse(localStorage.getItem("shopCart"))      Soumya's product view item
-
-
-// console.log(data[0].color,data[0].size)
 
 appendData(data)
 
@@ -59,7 +16,7 @@ main.classList.add("flex","main")
 var imgDiv=document.createElement("div")
 imgDiv.setAttribute("class","img")
 var img=document.createElement("img")
-img.src=elem.img
+img.src=elem.image
 img.setAttribute("width","100px")
 img.setAttribute("height","100px")
 
@@ -68,7 +25,7 @@ p.setAttribute("class","end")
 p.textContent="sale price"
 
 var price=document.createElement("p")
-price.textContent="$"+elem.saleprice;
+price.textContent=elem.saleP;
 price.setAttribute("class","end")
 /////////////
 
@@ -126,9 +83,9 @@ var p2=document.createElement("p")
 
 p2.textContent="-"
 
-if(elem.quantity>1){
+if(elem.quant>1){
     p2.addEventListener("click",()=>{
-         elem.quantity--;
+         elem.quant--;
          localStorage.setItem("shopCart",JSON.stringify(arr))
          appendData(arr)
          totalPrice(arr)
@@ -137,14 +94,14 @@ if(elem.quantity>1){
 }
 var p3=document.createElement("p")
 
-p3.textContent=elem.quantity||1
+p3.textContent=elem.quant||1
 
 var p4=document.createElement("p")
 
 p4.textContent="+"
 
 p4.addEventListener("click",()=>{
-    elem.quantity=+(p3.textContent)+1;
+    elem.quant=+(p3.textContent)+1;
     localStorage.setItem("shopCart",JSON.stringify(arr))
     appendData(arr)
     totalPrice(arr)
@@ -171,8 +128,9 @@ total(arr)
     function total(arr){
         var total=0;
         arr.forEach((elem)=>{
-           if(elem.quantity) total+=elem.price*elem.quantity
-           else  total+= +elem.price
+            var sp = Number(elem.saleP.replace("$",""))
+           if(elem.quant) total+=sp*(+elem.quant)
+           else  total+= +elem.saleP
         })
         var price=document.getElementById("price")
         price.textContent="$   "+ total+".00"
@@ -181,10 +139,5 @@ total(arr)
 
         totalPrice.textContent="$ "+(total+ +document.getElementById("extra").textContent)
     }
-
-   
-
-
-
 
 }
