@@ -321,6 +321,9 @@ function displayData(womensdata) {
 
         var image = document.createElement("img");
         image.setAttribute("src", ele.img);
+         image.addEventListener("click", function () {
+             openPage(ele);
+         });
 
         var saleprice = document.createElement("h3");
         saleprice.setAttribute("class", "o_p");
@@ -333,6 +336,9 @@ function displayData(womensdata) {
         var name = document.createElement("h5");
         name.setAttribute("class", "name");
         name.setAttribute("title", ele.name);
+        name.addEventListener("click", function () {
+            openPage(ele);
+        });
         name.innerText = ele.name;
 
         // var gender = document.createElement()
@@ -509,8 +515,8 @@ li3.addEventListener("click", function () {
 // For Connecting to Product view page
 
 function openPage(ele) {
-    var itemArray2 = [];
-    itemArray2.push(ele);
+    var itemArray = [];
+    itemArray.push(ele);
     console.log(itemArray);
     localStorage.setItem("itemData", JSON.stringify(itemArray));
     location.href = "/product_view_page/product_view.html";
