@@ -696,3 +696,4 @@ function openPage(ele) {
     localStorage.setItem("itemData", JSON.stringify(itemArray));
     location.href = "/product_view_page/product_view.html";
 }
+
