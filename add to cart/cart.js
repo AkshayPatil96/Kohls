@@ -1,143 +1,142 @@
-var data=JSON.parse(localStorage.getItem("shopCart"))
+var data = JSON.parse(localStorage.getItem("shopCart"));
 
-appendData(data)
+appendData(data);
 
-function appendData(arr,index){
-    var mainDiv=document.getElementById("leftside")
-    mainDiv.innerHTML=null;
+function appendData(arr, index) {
+    var mainDiv = document.getElementById("leftside");
+    mainDiv.innerHTML = null;
 
+    arr.forEach((elem) => {
+        var main = document.createElement("div");
 
-    arr.forEach((elem)=>{
-       var main=document.createElement("div")
+        // main.setAttribute("class","flex")
+        // main.setAttribute("class","main")
+        main.classList.add("flex", "main");
+        var imgDiv = document.createElement("div");
+        imgDiv.setAttribute("class", "img");
+        var img = document.createElement("img");
+        img.src = elem.image;
+        img.setAttribute("width", "100px");
+        img.setAttribute("height", "100px");
 
-// main.setAttribute("class","flex")
-// main.setAttribute("class","main")
-main.classList.add("flex","main")
-var imgDiv=document.createElement("div")
-imgDiv.setAttribute("class","img")
-var img=document.createElement("img")
-img.src=elem.image
-img.setAttribute("width","100px")
-img.setAttribute("height","100px")
+        var p = document.createElement("p");
+        p.setAttribute("class", "end");
+        p.textContent = "sale price";
 
-var p=document.createElement("p")
-p.setAttribute("class","end")
-p.textContent="sale price"
+        var price = document.createElement("p");
+        price.textContent = elem.saleP;
+        price.setAttribute("class", "end");
+        /////////////
 
-var price=document.createElement("p")
-price.textContent=elem.saleP;
-price.setAttribute("class","end")
-/////////////
+        imgDiv.append(img, p, price);
 
-imgDiv.append(img,p,price)
+        var content = document.createElement("div");
 
+        content.setAttribute("class", "content");
 
-var content=document.createElement("div")
+        var name = document.createElement("p");
+        name.setAttribute("class", "head");
+        name.textContent = elem.name;
 
-content.setAttribute("class","content")
+        var size = document.createElement("p");
 
-var name=document.createElement("p")
-name.setAttribute("class","head")
-name.textContent=elem.name
+        size.textContent = "Size :";
+        var b1 = document.createElement("b");
+        b1.textContent = elem.size;
+        size.append(b1);
 
-var size=document.createElement("p")
+        // var color=document.createElement("p")
+        // color.textContent="color :"
+        // var b2=document.createElement("b")
+        // b2.textContent=elem.color
+        // color.append(b2)
+        //////////////////
 
-size.textContent="Size :"
-var b1=document.createElement("b")
-b1.textContent=elem.size
-size.append(b1)
+        content.append(name, size);
+        ////////////////////////
 
-// var color=document.createElement("p")
-// color.textContent="color :"
-// var b2=document.createElement("b")
-// b2.textContent=elem.color
-// color.append(b2)
-//////////////////
+        main.append(imgDiv, content);
 
-content.append(name,size)
-////////////////////////
+        var saveDiv = document.createElement("div");
 
-main.append(imgDiv,content)
+        // saveDiv.setAttribute("class","flex")
+        console.log(saveDiv.getAttribute("class"));
+        // saveDiv.setAttribute("class","second")
+        saveDiv.classList.add("flex", "second");
 
-var saveDiv=document.createElement("div")
+        var h4 = document.createElement("h4");
+        h4.textContent = "Save for later";
 
-// saveDiv.setAttribute("class","flex")
-console.log(saveDiv.getAttribute("class"))
-// saveDiv.setAttribute("class","second")
-saveDiv.classList.add("flex","second")
+        var p1 = document.createElement("p");
 
-var h4=document.createElement("h4")
-h4.textContent="Save for later"
+        p1.textContent = "Delete";
 
-var p1=document.createElement("p")
+        p1.addEventListener("click", () => {
+            arr.splice(index, 1);
+            localStorage.setItem("shopCart", JSON.stringify(arr));
+            appendData(arr);
+            totalPrice(arr);
+        });
+        var p2 = document.createElement("p");
 
-p1.textContent="Delete"
+        p2.textContent = "-";
 
-p1.addEventListener("click",()=>{
-    arr.splice(index,1)
-    localStorage.setItem("shopCart",JSON.stringify(arr))
-    appendData(arr)
-    totalPrice(arr)
-})
-var p2=document.createElement("p")
+        if (elem.quant > 1) {
+            p2.addEventListener("click", () => {
+                elem.quant--;
+                localStorage.setItem("shopCart", JSON.stringify(arr));
+                appendData(arr);
+                totalPrice(arr);
+            });
+        }
+        var p3 = document.createElement("p");
 
-p2.textContent="-"
+        p3.textContent = elem.quant || 1;
 
-if(elem.quant>1){
-    p2.addEventListener("click",()=>{
-         elem.quant--;
-         localStorage.setItem("shopCart",JSON.stringify(arr))
-         appendData(arr)
-         totalPrice(arr)
-    })
-    
-}
-var p3=document.createElement("p")
+        var p4 = document.createElement("p");
 
-p3.textContent=elem.quant||1
+        p4.textContent = "+";
 
-var p4=document.createElement("p")
+        p4.addEventListener("click", () => {
+            elem.quant = +p3.textContent + 1;
+            localStorage.setItem("shopCart", JSON.stringify(arr));
+            appendData(arr);
+            totalPrice(arr);
+        });
+        ///////////////
 
-p4.textContent="+"
+        saveDiv.append(h4, p1, p2, p3, p4);
 
-p4.addEventListener("click",()=>{
-    elem.quant=+(p3.textContent)+1;
-    localStorage.setItem("shopCart",JSON.stringify(arr))
-    appendData(arr)
-    totalPrice(arr)
-
-})
-///////////////
-
-saveDiv.append(h4,p1,p2,p3,p4)
-
-mainDiv.append(main,saveDiv)
-
-    })
+        mainDiv.append(main, saveDiv);
+    });
 }
 
-totalPrice(data)
+totalPrice(data);
 
-function totalPrice(arr){
-    var itemCOunt=document.getElementById("count")
+function totalPrice(arr) {
+    var itemCOunt = document.getElementById("count");
 
-    itemCOunt.textContent= data.length
+    itemCOunt.textContent = data.length;
 
-total(arr)
+    total(arr);
 
-    function total(arr){
-        var total=0;
-        arr.forEach((elem)=>{
-            var sp = Number(elem.saleP.replace("$",""))
-           if(elem.quant) total+=sp*(+elem.quant)
-           else  total+= +elem.saleP
-        })
-        var price=document.getElementById("price")
-        price.textContent="$   "+ total+".00"
+    function total(arr) {
+        var total = 0;
+        arr.forEach((elem) => {
+            var sp = Number(elem.saleP.replace("$", ""));
+            if (elem.quant) total += sp * +elem.quant;
+            else total += +elem.saleP;
+        });
+        var price = document.getElementById("price");
+        price.textContent = "$   " + total + ".00";
 
-        var totalPrice=document.getElementById("totalPrice")
+        var totalPrice = document.getElementById("totalPrice");
 
-        totalPrice.textContent="$ "+(total+ +document.getElementById("extra").textContent)
+        totalPrice.textContent =
+            "$ " + (total + +document.getElementById("extra").textContent);
     }
-
 }
+
+document.querySelector("#cont-shop").addEventListener("click", function () {
+    location.href = "/product_view_page/product_view.html";
+});
