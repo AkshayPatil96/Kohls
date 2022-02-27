@@ -46,16 +46,13 @@ document.querySelector("#paybtn2").addEventListener("click", function(){
   // if(document.querySelector("input[type='submit']")
   //    .addEventListener("click", function () {
 
-      if(document.querySelector("#bt1")
-      .addEventListener("click", function () {
-      // document.querySelector(".container").style.color="black";
-       alert("Enter Billing Address")
+  //     document.querySelector("inline").style.display="inline";
    
-     }));
-    if(document.querySelector("#bt2").addEventListener("click",function(){
-      document.querySelector("#topbxb").value="";
-      alert("clear")
-    }));
+  //    }));
+    // if(document.querySelector("#bt2").addEventListener("click",function(){
+    //   document.querySelector("#topbxb").value="";
+    //   alert("clear")
+    // }));
 
     if(document.querySelector("#btb1").addEventListener("click",function(){
       window.location.href = "/payment page/paycomplete.html"
