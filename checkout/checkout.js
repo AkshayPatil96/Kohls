@@ -3,14 +3,6 @@ var checkOut=JSON.parse(localStorage.getItem("checkOut")) || [];
 checkOut.map(function(data)
 {   
 
-           //details of buyer//
-          var Name=document.createElement("p")
-        //    name.innerText= data.name
-           Name.innerText="Aditya"
-           var email=document.createElement("p")
-           email.innerText="aditya@gmail.com";
-        //    email.innerText=user.email;
-           document.querySelector("#name").append(Name,email)
         
            //    content of product div
            var maindiv=document.createElement("div")
