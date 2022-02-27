@@ -689,6 +689,7 @@ li3.addEventListener("click", function () {
 });
 
 // For Connecting to Product view page
+
 function openPage(ele) {
     var itemArray = [];
     itemArray.push(ele);
@@ -696,4 +697,5 @@ function openPage(ele) {
     localStorage.setItem("itemData", JSON.stringify(itemArray));
     location.href = "/product_view_page/product_view.html";
 }
+
 
