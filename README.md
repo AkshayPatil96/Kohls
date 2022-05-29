@@ -1,74 +1,75 @@
-# Kohls
-Kolh's Shopping
+# Clone of Netmeds.com
 
-Kohl’s Website Cloning Project | Masai
-  
-/////////////////////////////////////////////////////////////////////////////
+This was our project for Unit-2 Construct week at Masai Shcool.
+Our mian objective was to complete all main functionality of this e-commerce website , such as sing up to till to the byuing of a product.
+We have completed this project in 5 days.
 
-Home Page
-The home page is the main page which the customer see’s on first clicking on the website URL. The home page briefly showcases the different products available on the website.
-The common elements you’ll see throughout the website are the Navbar and the Footer.
+- [Click here](https://friendly-shirley-a1a2a5.netlify.app/) to see preview of our project.
 
-/////////////////////////////////////////////////////////////////////////////
+Kohls.com is leading E-Commerce website for all type of Clothings for men, women & Kids. And also Accessories and Electronics gadgets.
 
-The Navbar
-The navbar, as shown in the above picture consists of the following functionalities:
-1.The search bar
-The search bar sorts the products of the website according the term that is searched.
-2. The account logo which will take us to create account page if you are a new customer or to sign in page if you are an existing customer.
-3. The cart logo will take us to the cart page.
-4. The checkout logo will take us to the checkout page.
-5. Below the Kohl’s logo we can see the Shop by Category tab.
+## Credits
 
-/////////////////////////////////////////////////////////////////////////////
+- Images : [kohls.com](https://www.kohls.com/)
+- Content : [kohls.com](https://www.kohls.com/)
+- Icons : [Font Awesome](https://fontawesome.com/)
+- References : [MDN Docs](https://developer.mozilla.org/en-US/) | [W3School](https://www.w3schools.com/)
 
-Shop by Category ta
-Here we can click on a particular category which we want to shop for, and the website will show only the items of that category. Here, we used sorting to sort the items according to category.
+## Tech Stack
 
-/////////////////////////////////////////////////////////////////////////////
+- HTML 5
+- CSS 3
+- Javascript
 
-The Footer
-The footer consists of all the helpful links required by the customer. Also it includes the links for social media handles of the company as well as the mobile app of Kohl’s. We used anchor tags for the links.
-After first visiting the website the customer will create an account and sign-in to shop from the store.
-Create Account Page
+## Features
 
-//////////////////////////////////////////////////////////////////////////
+- Login and Sign in page
+- Filters Product by brands and size
+- Sort functions for Higher to Lower price,Lower to Higher price
+- Product page for different categories
+- Detailed product preview page
+- Add to cart option for buying products and wishlist option to add the product to wishlist
 
-Create Account page
-The user will fill in all the required data and the data will be pushed into a local storage item which will be helpful while authenticating the user while sign-in.
+## Presentation
 
-/////////////////////////////////////////////////////////////////////////////
+[Click here](https://drive.google.com/file/d/1qTAY8LztmVngsCepQ3l3WyGE3M3ZmQqE/view) to watch our project presentation.
 
-Sign-in page
-The sign-in page takes user input and checks if the customer is an existing user by validating the information from the local storage item. Also the page has a section which leads to create account page, if the user is new.
-After signing in the user will start shopping. For demo we’ll go to the Men’s clothing section.
-
-///////////////////////////////////////////////////////////////////////////
-
-Men’s Clothing page
-Here all the products will be shown. Women’s page will also be same and will show products for Women. The left side of the page has tabs to help filter the objects according to the mentioned things. Also the products can be sort according to price or ratings using the sort tab.
-After clicking on a product, we’ll be taken to the respective product view page.
-
-/////////////////////////////////////////////////////////////////////////////
-
-Product View page
-The product view page will show the selected product, also it will show the product description as we scroll down the page. The back button on the left upper corner will take us back to the section we previously came from.
-In this page we can view the product properly, select the size we want, add or reduce the quantity of the product, and finally if we wish to buy the product we can add the product to the cart using add to cart button. Adding to cart will push the information of the object into a local storage item which will be accessed by the cart page.
-
-/////////////////////////////////////////////////////////////////////////////
-
-Cart page
-In the cart page all our selected products appear. You can increase or decrease the quantity of the product or remove the product using delete button. The right half of the page shows the total number of items and tax to be applied and gives the total amount to be paid.
-Now for buying the products we have to go to the checkout page.
-
-/////////////////////////////////////////////////////////////////////////////
-
-Checkout Page
-On the checkout page the customer will fill the card details, and the address to which the products have to be delivered. After successful payment the customer will be taken to the successful order placement page, from there the customer can continue to shop more if he wishes.
-
--------------------------> Thank You! <----------------------------------------
+## Screenshots
 
 
+![App Screenshot](https://i.ibb.co/v423NTD/Screenshot-172.png)
+
+![App Screenshot](https://i.ibb.co/dm5Dj6x/Screenshot-173.png)
+
+![App Screenshot](https://i.ibb.co/tLr6vML/Screenshot-174.png)
+
+![App Screenshot](https://i.ibb.co/4jg1YKQ/Screenshot-176.png)
+
+![App Screenshot](https://i.ibb.co/z7H6zpW/Screenshot-177.png)
+
+![App Screenshot](https://i.ibb.co/fNb3g60/Screenshot-178.png)
+
+![App Screenshot](https://i.ibb.co/z65mWgJ/Screenshot-179.png)
 
 
+## Challenges
 
+- As every journey has some challenges and so was ours. In our team, all of the members were not familiar with each other so it was difficult for all of us to communicate and collaborate, there were some moments where members were not able to communicate with each other and had a conflict and it was hard for everyone to handle these conflicts.
+
+- Another problem was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.
+
+- As the navbar and footer were common for all the pages so we copied both of them in a single folder and imported them in every code, this was a kind of new method for us and we struggled while doing this step.
+
+- We faced challenges with CSS tags and class also, because when we merged CSS files for any page in which 2-3 members have worked, sometimes tags were colliding because of the same names of tags and classes.
+
+## Team
+
+- Akshay Patil
+- Soumya Hakke
+- Aditya Prajapati	
+- Aditya Arnav
+- Shreenath Chadive	
+
+## Authors
+
+- [@Akshay Patil](https://github.com/AlskayPatil96)
