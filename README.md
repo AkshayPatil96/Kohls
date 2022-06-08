@@ -1,4 +1,4 @@
-# Clone of Netmeds.com
+# Clone of Kohl's 
 
 This was our project for Unit-2 Construct week at Masai Shcool.
 Our mian objective was to complete all main functionality of this e-commerce website , such as sing up to till to the byuing of a product.
