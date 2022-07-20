@@ -66,6 +66,9 @@ Now for buying the products we have to go to the checkout page.
 Checkout Page
 On the checkout page the customer will fill the card details, and the address to which the products have to be delivered. After successful payment the customer will be taken to the successful order placement page, from there the customer can continue to shop more if he wishes.
 
+
+Live-Link-https://friendly-shirley-a1a2a5.netlify.app/homepage/
+
 -------------------------> Thank You! <----------------------------------------
 
 
