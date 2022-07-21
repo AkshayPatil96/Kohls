@@ -52,6 +52,7 @@ Kohls.com is leading E-Commerce website for all type of Clothings for men, women
 ![App Screenshot](https://i.ibb.co/z65mWgJ/Screenshot-179.png)
 
 
+
 ## Challenges
 
 - As every journey has some challenges and so was ours. In our team, all of the members were not familiar with each other so it was difficult for all of us to communicate and collaborate, there were some moments where members were not able to communicate with each other and had a conflict and it was hard for everyone to handle these conflicts.
